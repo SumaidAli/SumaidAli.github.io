@@ -180,7 +180,8 @@ pre.yaml{font-family:var(--mono);font-size:11.5px;line-height:1.65;background:#0
 .xrow{display:grid;grid-template-columns:200px 1fr auto;gap:24px;padding:28px 0;border-bottom:1px solid var(--line-2);align-items:baseline}
 @media(max-width:760px){.xrow{grid-template-columns:1fr;gap:6px}}
 .xrow h3{font-size:clamp(28px,3.4vw,48px);letter-spacing:-.03em;line-height:.95;font-variation-settings:"wdth" 70}
-.xrow p{color:#a6a6a2;margin-top:8px;max-width:58ch}
+.xrow p{color:#a6a6a2;margin-top:8px;max-width:62ch}
+.xrow p.role{margin-top:6px;font-family:var(--mono);font-size:12.5px;color:var(--fg);letter-spacing:.02em}
 .pill{font-family:var(--mono);font-size:11px;padding:4px 10px;border-radius:99px;border:1px solid var(--line-2);color:var(--muted);white-space:nowrap;justify-self:start}
 .pill.now{border-color:var(--hot);color:var(--hot)}
 .kit{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:60px;border-top:1px solid var(--line-2)}
@@ -284,7 +285,7 @@ footer a:hover{color:var(--fg)}
     <div class="qn">03</div>
     <span class="lbl">Research question · Secure by design</span>
     <h2 class="split" style="margin-top:14px">Can threat modeling be <em>measured</em>, not just practiced?</h2>
-    <p class="fade">STRIDE reviews, OWASP checklists, and scanners like Checkmarx and Snyk each catch different things. I want to find where design-time analysis and code scanning disagree, and what that gap costs.</p>
+    <p class="fade">At Syntricx I ran STRIDE reviews and wired Checkmarx, Burp Suite, and Snyk into CI/CD. Each one caught different things. I want to find where design-time analysis and code scanning disagree, and what that gap costs.</p>
     <div class="chips fade"><span>AppSec</span><span>STRIDE</span><span>SAST / SCA</span><span>PCI-DSS</span></div>
     <p class="cue">Behind this: a system's structure, weak joints lit up</p>
   </div></div>
@@ -369,14 +370,14 @@ footer a:hover{color:var(--fg)}
 <section class="sec" id="experience" data-shape="lattice" data-x=".32" data-y="0" data-s=".65" data-a=".25" data-sh=".4">
   <div class="head"><h2 class="split">Experience</h2><span class="lbl">(03)</span></div>
   <div class="xp">
-    <div class="xrow fade"><span class="lbl">Expected Dec 2026</span><div><h3>University of South Florida</h3><p>B.S. in Cybersecurity. Network security, cloud security on AWS, and database systems.</p></div><span class="pill now">In progress</span></div>
-    <div class="xrow fade"><span class="lbl">Internship</span><div><h3>PayFAST (APPS)</h3><p>Security work in a payments environment, where PCI-DSS shapes every engineering decision.</p></div><span class="pill">Payments</span></div>
-    <div class="xrow fade"><span class="lbl">Internship</span><div><h3>Syntricx</h3><p>Industry internship applying security tooling and frameworks to production systems.</p></div><span class="pill">Industry</span></div>
+    <div class="xrow fade"><span class="lbl">Expected Dec 2026</span><div><h3>University of South Florida</h3><p class="role">B.S. Cybersecurity</p><p>Coursework in information security, penetration testing, incident response, computer networks, databases, and data structures.</p></div><span class="pill now">In progress</span></div>
+    <div class="xrow fade"><span class="lbl">Internship</span><div><h3>Syntricx</h3><p class="role">Information Security Intern</p><p>Ran STRIDE threat modeling and risk assessments across 10+ application modules to catch design-level risks before deployment. Integrated Checkmarx, Burp Suite, and Snyk into Jenkins and GitLab CI/CD, cutting 30+ hours of manual review per release, and worked with developers to raise remediation rates by 25%.</p></div><span class="pill">AppSec</span></div>
+    <div class="xrow fade"><span class="lbl">Internship</span><div><h3>PayFAST (APPS)</h3><p class="role">Cyber Security Intern</p><p>Pen tested, code reviewed, and scanned 15+ components against OWASP Top 10 and PCI-DSS, reducing exploitable risk by 35%. Found and reported 25+ flaws in SOAP and REST APIs with Postman, and ran Micro Focus SAST/DAST in CI/CD pipelines to raise detection coverage by 20%.</p></div><span class="pill">Payments</span></div>
   </div>
   <div class="kit fade">
     <div><span class="lbl">Frameworks</span><ul><li>STRIDE</li><li>OWASP Top 10</li><li>PCI-DSS</li><li>HIPAA</li></ul></div>
-    <div><span class="lbl">Tools</span><ul><li>Burp Suite · Checkmarx · Snyk</li><li>Splunk · Graylog</li><li>Nessus · Wireshark</li><li>Chainsaw · Metasploit</li></ul></div>
-    <div><span class="lbl">Studying for</span><ul><li>CompTIA Security+ · CySA+</li><li>Microsoft SC-900</li><li>Microsoft AZ-900</li></ul></div>
+    <div><span class="lbl">Tools</span><ul><li>Burp Suite · Checkmarx · Snyk · SonarQube</li><li>Splunk · Graylog · Wireshark</li><li>Nessus · Nexpose · Metasploit</li><li>Python · C · Java · Rust · SQL</li><li>Docker · Kubernetes</li></ul></div>
+    <div><span class="lbl">Studying for</span><ul><li>CompTIA Security+</li><li>CompTIA Network+</li><li>CompTIA CySA+</li><li>Microsoft SC-900</li></ul></div>
   </div>
 </section>
 
